@@ -1,0 +1,22 @@
+[
+  {
+    "environment": {
+      "environmentName": "UI",
+      "username": "mali7yurt@gmail.com",
+      "password": "test01",
+      "url": "https://insiderone.com/",
+      "careersUrl":"https://insiderone.com/careers/quality-assurance/",
+      "jobsLeverUrl":"https://jobs.lever.co/insiderone/774658ce-0d6e-4b07-a69b-4629fa11d6f3",
+      "qaJobTitle":"Insider One - Software Quality Assurance Engineer (Remote)",
+      "cookies": "yes"
+
+    }
+  },
+  {
+    "environment": {
+      "environmentName": "API",
+      "apiBaseUrl": "https://petstore.swagger.io/v2"
+
+    }
+  }
+]

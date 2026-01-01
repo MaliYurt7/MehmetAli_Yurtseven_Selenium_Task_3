@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="API and UI Suite">
+    <test name="API Tests">
+        <classes>
+            <class name="com.insiderone.API.PostPets"/>
+            <class name="com.insiderone.API.GetPets"/>
+        </classes>
+    </test>
+
+    <!-- UI Testleri -->
+    <test name="UI Tests">
+        <packages>
+            <package name="com.insiderone.UI.tests.Footer"></package>
+            <package name="com.insiderone.UI.tests.HomePage"></package>
+        </packages>
+    </test>
+</suite>
