@@ -1,11 +1,11 @@
-package com.insiderone.API;
+package com.insiderone.API.ApiTests;
 
 import com.insiderone.utilities.Driver;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import org.testng.Assert;
-import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import java.util.List;
@@ -17,11 +17,14 @@ import static io.restassured.RestAssured.given;
 public class GetPets {
 
 
-    @BeforeMethod
+    @BeforeClass
     public void beforeClass() {
-        Driver.setTestEnvironment();
-        RestAssured.baseURI = Driver.testEnvironmentDetails.get("apiBaseUrl");
-        ;
+        //First way, getting baseURI from configuration.json file
+//        Driver.setTestEnvironment();
+//        RestAssured.baseURI = Driver.testEnvironmentDetails.get("apiBaseUrl");
+
+        //Second way, setting baseURI in each BeforeMethod()
+        RestAssured.baseURI="https://petstore.swagger.io/v2";
 
     }
 
@@ -38,7 +41,6 @@ public class GetPets {
 
         List<Map<String, Object>> jsonToListOfMap = response.body().as(List.class); // deserilization completed with this line code
         System.out.println("jsonToListOfMap = " + jsonToListOfMap);
-        //jsonToListOfMap = [{id=3.0, category={id=2.0, name=Cats}, name=Cat 3, photoUrls=[url1, url2], tags=[{id=1.0, name=tag3}, {id=2.0, name=tag4}], status=pending}, {id=6.0, category={id=1.0, name=Dogs}, name=Dog 3, photoUrls=[url1, url2], tags=[{id=1.0, name=tag3}, {id=2.0, name=tag4}], status=pending}]
 
 
         Map<String, Object> firstElement = jsonToListOfMap.get(0);

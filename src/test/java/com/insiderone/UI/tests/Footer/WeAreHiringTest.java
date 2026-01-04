@@ -4,8 +4,6 @@ import com.insiderone.UI.pages.WeAreHiringPages;
 import com.insiderone.UI.tests.TestBase;
 import com.insiderone.utilities.BrowserUtils;
 import com.insiderone.utilities.Driver;
-import io.qameta.allure.Severity;
-import io.qameta.allure.SeverityLevel;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
@@ -37,10 +35,9 @@ public class WeAreHiringTest extends TestBase {
      * Job Location == "Istanbul, Turkey"
      * "View Role" button should display
      */
-    @Test(description = "Valid login flow")
-    @Severity(SeverityLevel.NORMAL)
+    @Test
     public void qaCareersTest() {
-
+        test = report.createTest("UI Task, part 2,3 and 4");
 
         BrowserUtils.waitForVisibility(weAreHiringPages.getSeeAllQAJobs, 10);
         weAreHiringPages.getSeeAllQAJobs.click();
@@ -94,7 +91,27 @@ Application form page
         Assert.assertTrue(testEnvironmentDetails.get("jobsLeverUrl").contains(Driver.get().getCurrentUrl()));
         Assert.assertTrue(testEnvironmentDetails.get("qaJobTitle").contains(Driver.get().getTitle()));
         Assert.assertTrue(weAreHiringPages.getOneRoleTitle.getText().contains(expectedJobPosition));
+        test.pass("PASSED");
 
+    }
+
+
+    @Test
+    public void getNumberOfIstanbuCityTest() { //negatif testing purpose
+        test = report.createTest("UI Task, checking no Dublicating Istnabul city name in the location Dropdown");
+
+        BrowserUtils.waitForVisibility(weAreHiringPages.getSeeAllQAJobs, 10);
+        weAreHiringPages.getSeeAllQAJobs.click();
+
+
+        BrowserUtils.getDomCompleted();
+        BrowserUtils.waitForPresenceOfElement(By.cssSelector("#career-position-list div[data-animated='true']"), 100);
+
+        weAreHiringPages.getAllLocation.click();
+        int noOfIstanbulInDrpdown=1;
+        int getNoOfistanbulInDropdown = weAreHiringPages.getNoOfSameCityNameInDrpdwn("Istanbul").size();
+        Assert.assertEquals(getNoOfistanbulInDropdown, noOfIstanbulInDrpdown);
+        test.pass("PASSED");
 
     }
 }

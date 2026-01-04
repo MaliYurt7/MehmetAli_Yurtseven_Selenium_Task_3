@@ -4,14 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="45736541-d44a-4aa9-8e73-74a8492df96c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="45736541-d44a-4aa9-8e73-74a8492df96c" name="Changes" comment="Updating">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/insiderone/API/GetPets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/insiderone/API/ApiTests/GetPets.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/insiderone/API/PostPets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/insiderone/API/ApiTests/PostPets.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/insiderone/UI/pages/WeAreHiringPages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/insiderone/UI/pages/WeAreHiringPages.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/insiderone/UI/tests/Footer/WeAreHiringTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/insiderone/UI/tests/Footer/WeAreHiringTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/insiderone/UI/tests/HomePage/HomePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/insiderone/UI/tests/HomePage/HomePageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/insiderone/UI/tests/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/insiderone/UI/tests/TestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/insiderone/utilities/BrowserUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/insiderone/utilities/BrowserUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/uiTestData/ModulesOnHomePage.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/uiTestData/ModulesOnHomePage.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng_runner_1_PackageLevel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng_runner_1_Regressio_All_Package.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng_runner_2_classLevel.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng_runner_3_notRunspecificTestCasefromClass.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng_runner_4_SmokeTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng_runner_2_SmokeTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng_runner_5_RegressionTest.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,16 +50,16 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/aslihancap/Desktop/Insiderone_UI_API_Automation",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/aslihancap/Desktop/Insiderone_UI_API_Automation&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.insiderone.API.PetsPojo" />
@@ -62,6 +72,8 @@
       <recent name="$PROJECT_DIR$/src/test/java/com/insiderone/utilities" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/test/java/com/insiderone/LoadTestingDocuments" />
       <recent name="$PROJECT_DIR$/src/test/java/com/insiderone/API/PetPayLoadBluePrint" />
       <recent name="$PROJECT_DIR$/src/test/java/com/insiderone/API" />
       <recent name="$PROJECT_DIR$/src/test/resources/uiTestData" />
@@ -71,62 +83,42 @@
       <recent name="com.insiderone.tests" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.HomePageTest.testAllRowsTogether">
-    <configuration name="HomePageTest.testAllRowsTogether" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.GetPets">
+    <configuration name="GetPets" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Insiderone_UI_API_Automation" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.insiderone.UI.tests.HomePage.*" />
+          <option name="PATTERN" value="com.insiderone.API.ApiTests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.insiderone.UI.tests.HomePage" />
-      <option name="MAIN_CLASS_NAME" value="com.insiderone.UI.tests.HomePage.HomePageTest" />
-      <option name="METHOD_NAME" value="testAllRowsTogether" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PACKAGE_NAME" value="com.insiderone.API.ApiTests" />
+      <option name="MAIN_CLASS_NAME" value="com.insiderone.API.ApiTests.GetPets" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PostPets.negatifTestingForInvalidStringNumberPetId" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="PostPets" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Insiderone_UI_API_Automation" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.insiderone.API.*" />
+          <option name="PATTERN" value="com.insiderone.API.ApiTests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.insiderone.API" />
-      <option name="MAIN_CLASS_NAME" value="com.insiderone.API.PostPets" />
-      <option name="METHOD_NAME" value="negatifTestingForInvalidStringNumberPetId" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PACKAGE_NAME" value="com.insiderone.API.ApiTests" />
+      <option name="MAIN_CLASS_NAME" value="com.insiderone.API.ApiTests.PostPets" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PostPets.positifTesting" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Insiderone_UI_API_Automation" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.insiderone.API.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.insiderone.API" />
-      <option name="MAIN_CLASS_NAME" value="com.insiderone.API.PostPets" />
-      <option name="METHOD_NAME" value="positifTesting" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WeAreHiringTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="WeAreHiringTest.getNumberOfIstanbuCityTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Insiderone_UI_API_Automation" />
       <extension name="coverage">
         <pattern>
@@ -136,16 +128,27 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.insiderone.UI.tests.Footer" />
       <option name="MAIN_CLASS_NAME" value="com.insiderone.UI.tests.Footer.WeAreHiringTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="METHOD_NAME" value="getNumberOfIstanbuCityTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="/Users/aslihancap/Desktop/Insiderone_UI_API_Automation/testng_runner_1_PackageLevel.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="/Users/aslihancap/Desktop/Insiderone_UI_API_Automation/testng_runner_3_specificMethod_InClass.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Insiderone_UI_API_Automation" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng_runner_1_PackageLevel.xml" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng_runner_3_specificMethod_InClass.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="/Users/aslihancap/Desktop/Insiderone_UI_API_Automation/testng_runner_4_specificMethod_InClass.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Insiderone_UI_API_Automation" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng_runner_4_specificMethod_InClass.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
@@ -155,11 +158,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.HomePageTest.testAllRowsTogether" />
-        <item itemvalue="TestNG./Users/aslihancap/Desktop/Insiderone_UI_API_Automation/testng_runner_1_PackageLevel.xml" />
-        <item itemvalue="TestNG.PostPets.positifTesting" />
-        <item itemvalue="TestNG.PostPets.negatifTestingForInvalidStringNumberPetId" />
-        <item itemvalue="TestNG.WeAreHiringTest" />
+        <item itemvalue="TestNG.GetPets" />
+        <item itemvalue="TestNG.PostPets" />
+        <item itemvalue="TestNG./Users/aslihancap/Desktop/Insiderone_UI_API_Automation/testng_runner_3_specificMethod_InClass.xml" />
+        <item itemvalue="TestNG.WeAreHiringTest.getNumberOfIstanbuCityTest" />
+        <item itemvalue="TestNG./Users/aslihancap/Desktop/Insiderone_UI_API_Automation/testng_runner_4_specificMethod_InClass.xml" />
       </list>
     </recent_temporary>
   </component>
@@ -172,6 +175,15 @@
       <option name="presentableId" value="Default" />
       <updated>1767049247472</updated>
     </task>
+    <task id="LOCAL-00001" summary="LoadTestingResultsAndDocumnets">
+      <option name="closed" value="true" />
+      <created>1767253225310</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1767253225310</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -184,5 +196,12 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="LoadTestingResultsAndDocumnets" />
+    <option name="LAST_COMMIT_MESSAGE" value="LoadTestingResultsAndDocumnets" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Insiderone_UI_API_Automation$_Users_aslihancap_Desktop_Insiderone_UI_API_Automation_testng_xml.ic" NAME="$PROJECT_DIR$/testng.xml Coverage Results" MODIFIED="1767405846135" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

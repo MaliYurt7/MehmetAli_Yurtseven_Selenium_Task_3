@@ -32,13 +32,12 @@ The project's `pom.xml` file includes the following dependencies & plugins:
 - `json-schema-validator` v.5.5.6
 - `json-simple` v.1.1
 - `extentreports` v.5.1.2
+- `allure` v.2.30.0
 - `json` v.20250517
 - `javafaker` v.1.0.2
 - `logback-classic` v.1.5.16
 - `lombok` v.1.18.42
 - `poi-ooxml` v.5.5.1
-
-
 
 
 # Development
@@ -54,9 +53,9 @@ The code implementation for the test scenarios is done in accordance with the re
 cd C:\Path\to\Project
 ```
 
-- run following command
+- run following command to trigger the xml files for example of `testng_runner_3_specificMethod_InClass.xml`
 ```
-mvn test
+mvn clean test -Dsurefire.suiteXmlFiles=testng_runner_3_specificMethod_InClass.xml
 ```
 or
 - each test can be triggered inside of the class.
@@ -70,7 +69,10 @@ In addition to the API-focused tests I developed, there is a area I’d consider
 improve overall coverage:
 
 - I’d consider adding some **UI and DB check against API responses** to make sure that values retrieved and shown on the API match with UI and DB side
+- 
+- To get extenreport, go to `TestReports.html` under the `test-output` folder. Firstly, find where this `TestReports.html` file located and then open in any browser.
 
-
-- To get allure report , allure serve allure-results should be run on the terminal
-- The failure tests screenshots can be found under the `screenshots` folder
+- To get allure report, open the terminal in IntelliJ IDEA. Navigate to the project directory if not already there. Execute the following command to serve the Allure report:
+``` 
+allure serve allure-results
+```

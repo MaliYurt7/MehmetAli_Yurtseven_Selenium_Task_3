@@ -40,6 +40,7 @@ public class BrowserUtils {
         // full path to the screenshot location
         String target = System.getProperty("user.dir") + "/test-output/Screenshots/" + name + date + ".png";
         File finalDestination = new File(target);
+        new File("test-output/Screenshots").mkdirs();
         // save the screenshot to the path given
         FileUtils.copyFile(source, finalDestination);
         return target;

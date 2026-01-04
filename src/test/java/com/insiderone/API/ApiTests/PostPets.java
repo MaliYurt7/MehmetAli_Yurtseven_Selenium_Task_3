@@ -1,4 +1,4 @@
-package com.insiderone.API;
+package com.insiderone.API.ApiTests;
 
 
 import com.insiderone.API.DataFiles.jsonPayload;
@@ -23,9 +23,13 @@ public class PostPets {
 
     @BeforeClass
     public void beforeClass() {
-        Driver.setTestEnvironment();
-        System.out.println("Driver.testEnvironmentDetails.get(\"apiBaseUrl\") = " + Driver.testEnvironmentDetails.get("apiBaseUrl"));
-        RestAssured.baseURI = Driver.testEnvironmentDetails.get("apiBaseUrl");
+        //First way, getting baseURI from configuration.json file
+//        Driver.setTestEnvironment();
+//        System.out.println("Driver.testEnvironmentDetails.get(\"apiBaseUrl\") = " + Driver.testEnvironmentDetails.get("apiBaseUrl"));
+//        RestAssured.baseURI = Driver.testEnvironmentDetails.get("apiBaseUrl");
+
+        //Second way, setting baseURI in each BeforeMethod()
+        RestAssured.baseURI="https://petstore.swagger.io/v2";
     }
 
     @Test

@@ -1,18 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="API and UI Suite">
-    <test name="API Tests">
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="AllureSuite" verbose="1">
+    <test name="UI_Test">
         <classes>
-            <class name="com.insiderone.API.PostPets"/>
-            <class name="com.insiderone.API.GetPets"/>
+            <class name="com.insiderone.UI.tests.HomePage.HomePageTest"></class>
+            <class name="com.insiderone.UI.tests.Footer.WeAreHiringTest"></class>
         </classes>
-    </test>
-
-    <!-- UI Testleri -->
-    <test name="UI Tests">
-        <packages>
-            <package name="com.insiderone.UI.tests.Footer"></package>
-            <package name="com.insiderone.UI.tests.HomePage"></package>
-        </packages>
     </test>
 </suite>

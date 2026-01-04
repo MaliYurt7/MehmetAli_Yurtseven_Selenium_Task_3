@@ -32,15 +32,19 @@ public class HomePageTest extends TestBase {
 
     @Test(dataProvider = "moduleNavigationData")
     public void navigateToPartnersPage(String Module, String SubModule, String Title) {
+
+        test = report.createTest("UI Task, first way for part 1 ");
+
         // Remove the FOR loop - DataProvider already iterates through all rows
         homePage.navigateToModule(Module, SubModule);
         BrowserUtils.waitForExactTitle(Driver.get(),Title,20);
         Assert.assertTrue(Driver.get().getTitle().contains(Title));  // Same browser!
-
+        test.pass("PASSED");
     }
 
     @Test
     public void testAllRowsTogether() {
+        test = report.createTest("UI Task, Second way for part 1");
         // Loop through ALL rows in one browser
         moduleNavigationData();
         for (String[] row : dataArray) {
@@ -52,6 +56,8 @@ public class HomePageTest extends TestBase {
 
             BrowserUtils.waitForExactTitle(Driver.get(),Title,30);
             Assert.assertTrue(Driver.get().getTitle().contains(Title));
+
+            test.pass("PASSED");
 
 
         }
