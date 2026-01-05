@@ -15,7 +15,7 @@
 
         <webdrivermanager.version>6.3.3</webdrivermanager.version>
         <selenium.version>4.39.0</selenium.version>
-        <aspectj.version>1.9.21</aspectj.version>
+        <aspectj.version>1.9.22</aspectj.version>
         <allure.version>2.30.0</allure.version>
 
 
@@ -147,7 +147,11 @@
                     <testFailureIgnore>false</testFailureIgnore>
                     <argLine>
                         -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
+                        -Dallure.results.directory=target/allure-results
                     </argLine>
+                    <systemPropertyVariables>
+                        <allure.results.directory>${project.build.directory}/allure-results</allure.results.directory>
+                    </systemPropertyVariables>
                 </configuration>
                 <dependencies>
                     <dependency>

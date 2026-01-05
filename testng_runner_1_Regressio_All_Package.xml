@@ -1,9 +1,10 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 <suite name="Insiderone_UI" verbose="1">
-    <test name="Insiderone_UI_Regression_AllPackage">
+    <test name="Insiderone_UI_And_API_Regression_AllPackage">
         <packages>
             <package name="com.insiderone.UI.tests.Footer"></package>
             <package name="com.insiderone.UI.tests.HomePage"></package>
+            <package name="com.insiderone.API.ApiTests"></package>
         </packages>
     </test>
 </suite>
