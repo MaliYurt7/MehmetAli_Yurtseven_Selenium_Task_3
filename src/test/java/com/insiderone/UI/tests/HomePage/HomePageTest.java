@@ -5,11 +5,11 @@ import com.insiderone.UI.tests.TestBase;
 import com.insiderone.utilities.BrowserUtils;
 import com.insiderone.utilities.Driver;
 import com.insiderone.utilities.ExcelUtil;
-import org.testng.Assert;
 import org.testng.annotations.*;
 
-public class HomePageTest extends TestBase {
+import static org.testng.Assert.assertTrue;
 
+public class HomePageTest extends TestBase {
 
     HomePages homePage = new HomePages();
 
@@ -38,7 +38,7 @@ public class HomePageTest extends TestBase {
         // Remove the FOR loop - DataProvider already iterates through all rows
         homePage.navigateToModule(Module, SubModule);
         BrowserUtils.waitForExactTitle(Driver.get(),Title,20);
-        Assert.assertTrue(Driver.get().getTitle().contains(Title));  // Same browser!
+        assertTrue(Driver.get().getTitle().contains(Title));
         test.pass("PASSED");
     }
 
@@ -55,10 +55,9 @@ public class HomePageTest extends TestBase {
             homePage.navigateToModule(Module, SubModule);
 
             BrowserUtils.waitForExactTitle(Driver.get(),Title,30);
-            Assert.assertTrue(Driver.get().getTitle().contains(Title));
+            assertTrue(Driver.get().getTitle().contains(Title));
 
             test.pass("PASSED");
-
 
         }
     }

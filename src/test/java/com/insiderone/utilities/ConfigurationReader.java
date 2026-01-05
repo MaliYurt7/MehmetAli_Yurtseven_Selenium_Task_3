@@ -98,17 +98,14 @@ public class ConfigurationReader {
                     testEnvironmentDetails.put("qaJobTitle",qaJobTitle);
                     System.out.println(qaJobTitle);
 
-
                     //Get apiBaseUrl information
                     String apiBaseUrl = (String) testEnvironmentObject.get("apiBaseUrl");
                     testEnvironmentDetails.put("apiBaseUrl",apiBaseUrl);
                     System.out.println(apiBaseUrl);
                     break;
 
-
                 }
             }
-
         }
         return testEnvironmentDetails;
     }

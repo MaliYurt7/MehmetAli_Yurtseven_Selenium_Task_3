@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="45736541-d44a-4aa9-8e73-74a8492df96c" name="Changes" comment="Updating some xml and reports side of the project to adapt to jenkins.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testng_runner_1_Regressio_All_Package.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng_runner_1_Regressio_All_Package.xml" afterDir="false" />
+    <list default="true" id="45736541-d44a-4aa9-8e73-74a8492df96c" name="Changes" comment="Updating some xml and pom sections of the project to adapt to jenkins -2.">
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/insiderone/UI/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/insiderone/UI/pages/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/insiderone/UI/pages/HomePages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/insiderone/UI/pages/HomePages.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/insiderone/UI/pages/WeAreHiringPages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/insiderone/UI/pages/WeAreHiringPages.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/insiderone/UI/tests/Footer/WeAreHiringTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/insiderone/UI/tests/Footer/WeAreHiringTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/insiderone/UI/tests/HomePage/HomePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/insiderone/UI/tests/HomePage/HomePageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/insiderone/utilities/ConfigurationReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/insiderone/utilities/ConfigurationReader.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,7 +180,15 @@
       <option name="project" value="LOCAL" />
       <updated>1767570921155</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Updating some xml and pom sections of the project to adapt to jenkins -2.">
+      <option name="closed" value="true" />
+      <created>1767573580133</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1767573580133</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -194,7 +205,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="LoadTestingResultsAndDocumnets" />
     <MESSAGE value="Updating some xml and reports side of the project to adapt to jenkins." />
-    <option name="LAST_COMMIT_MESSAGE" value="Updating some xml and reports side of the project to adapt to jenkins." />
+    <MESSAGE value="Updating some xml and pom sections of the project to adapt to jenkins -2." />
+    <option name="LAST_COMMIT_MESSAGE" value="Updating some xml and pom sections of the project to adapt to jenkins -2." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Insiderone_UI_API_Automation$_Users_aslihancap_Desktop_Insiderone_UI_API_Automation_testng_xml.ic" NAME="$PROJECT_DIR$/testng.xml Coverage Results" MODIFIED="1767405846135" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

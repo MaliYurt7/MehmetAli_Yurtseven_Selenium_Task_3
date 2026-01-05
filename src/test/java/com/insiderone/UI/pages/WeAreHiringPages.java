@@ -27,10 +27,8 @@ public class WeAreHiringPages extends BasePage {
     @FindBy(css = "#career-position-list div[data-animated='true'] span")
     public List<WebElement> getJobDepartment;
 
-
     @FindBy(css = "#career-position-list div[data-animated='true'] div")
     public List<WebElement> getJobLocation;
-
 
     @FindBy(css = "#career-position-list div[data-animated='true'] a")
     public List<WebElement> getViewRoleBtn;
@@ -41,6 +39,5 @@ public class WeAreHiringPages extends BasePage {
     public List<WebElement> getNoOfSameCityNameInDrpdwn(String cityName) {
         return Driver.get().findElements(By.xpath("//option[contains(text(),'" + cityName + "')]"));
     }
-
 
 }

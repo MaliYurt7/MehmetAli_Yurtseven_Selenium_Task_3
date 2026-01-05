@@ -15,13 +15,11 @@ abstract class BasePage {
         PageFactory.initElements(Driver.get(), this);
     }
 
-
     @FindBy(css = "a.btn.btn-text")
     public WebElement getLoginBtn;
 
     @FindBy(css = "div.header-top-action-lang button i.icon-arrow")
     public WebElement getLanguagaBtn;
-
 
     /**
      *
@@ -42,11 +40,6 @@ abstract class BasePage {
         String desiredButton="//button[normalize-space()='"+buttonName+"']";
         return Driver.get().findElement(By.xpath(desiredButton));
     }
-
-
-
-
-
 
     /**
      *covers Partners, Insider One Academy, Help Center, Contact Us

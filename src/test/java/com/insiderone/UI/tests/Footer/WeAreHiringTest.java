@@ -10,6 +10,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import static com.insiderone.utilities.Driver.testEnvironmentDetails;
+import static org.testng.Assert.assertTrue;
 
 public class WeAreHiringTest extends TestBase {
 
@@ -50,10 +51,10 @@ public class WeAreHiringTest extends TestBase {
         BrowserUtils.verifyDDLNotEmptyAndContainsSpecificValue(weAreHiringPages.getAllLocation, "Istanbul, Turkiye");
         System.out.println("weAreHiringPages.getAllLocation.getText() = " + weAreHiringPages.getAllLocation.getAttribute("value"));
         System.out.println("BrowserUtils.getFirstSelectedOptionFromSelectTag(weAreHiringPages.getAllLocation) = " + BrowserUtils.getFirstSelectedOptionFromSelectTag(weAreHiringPages.getAllLocation));
-        Assert.assertTrue(BrowserUtils.getFirstSelectedOptionFromSelectTag(weAreHiringPages.getAllLocation).contains("Istanbul, Turkiye"));
+        assertTrue(BrowserUtils.getFirstSelectedOptionFromSelectTag(weAreHiringPages.getAllLocation).contains("Istanbul, Turkiye"));
 
         BrowserUtils.verifyDDLNotEmptyAndContainsSpecificValue(weAreHiringPages.getFilterAllDepartment, "Quality Assurance");
-        Assert.assertTrue(BrowserUtils.getFirstSelectedOptionFromSelectTag(weAreHiringPages.getFilterAllDepartment).contains("Quality Assurance"));
+        assertTrue(BrowserUtils.getFirstSelectedOptionFromSelectTag(weAreHiringPages.getFilterAllDepartment).contains("Quality Assurance"));
 
         System.out.println("weAreHiringPages.getFilterAllDepartment = " + weAreHiringPages.getFilterAllDepartment.getAttribute("value"));
         System.out.println("BrowserUtils.getFirstSelectedOptionFromSelectTag(weAreHiringPages.getFilterAllDepartment) = " + BrowserUtils.getFirstSelectedOptionFromSelectTag(weAreHiringPages.getFilterAllDepartment));
@@ -74,10 +75,10 @@ public class WeAreHiringTest extends TestBase {
 
         System.out.println("weAreHiringPages.getJobListDisplayed.size() = " + weAreHiringPages.getJobListDisplayed.size());
         Assert.assertEquals(weAreHiringPages.getJobListDisplayed.size(), expectedNumOfJobDisplayed);
-        Assert.assertTrue(weAreHiringPages.getJobPosition.get(0).getText().contains(expectedJobPosition));
-        Assert.assertTrue(weAreHiringPages.getJobDepartment.get(0).getText().contains(expectedJobDepartment));
-        Assert.assertTrue(weAreHiringPages.getJobLocation.get(0).getText().contains(expectedJobLocation));
-        Assert.assertTrue(weAreHiringPages.getViewRoleBtn.get(0).getText().contains(expectedViewRoleBtnText));
+        assertTrue(weAreHiringPages.getJobPosition.get(0).getText().contains(expectedJobPosition));
+        assertTrue(weAreHiringPages.getJobDepartment.get(0).getText().contains(expectedJobDepartment));
+        assertTrue(weAreHiringPages.getJobLocation.get(0).getText().contains(expectedJobLocation));
+        assertTrue(weAreHiringPages.getViewRoleBtn.get(0).getText().contains(expectedViewRoleBtnText));
 
 
 /*
@@ -88,9 +89,9 @@ Application form page
 
         BrowserUtils.switchToWindow("Insider One - Software Quality Assurance Engineer (Remote)");
         BrowserUtils.getDomCompleted();
-        Assert.assertTrue(testEnvironmentDetails.get("jobsLeverUrl").contains(Driver.get().getCurrentUrl()));
-        Assert.assertTrue(testEnvironmentDetails.get("qaJobTitle").contains(Driver.get().getTitle()));
-        Assert.assertTrue(weAreHiringPages.getOneRoleTitle.getText().contains(expectedJobPosition));
+        assertTrue(testEnvironmentDetails.get("jobsLeverUrl").contains(Driver.get().getCurrentUrl()));
+        assertTrue(testEnvironmentDetails.get("qaJobTitle").contains(Driver.get().getTitle()));
+        assertTrue(weAreHiringPages.getOneRoleTitle.getText().contains(expectedJobPosition));
         test.pass("PASSED");
 
     }
